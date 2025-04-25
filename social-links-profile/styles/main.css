@@ -1,0 +1,72 @@
+/* Global styles */
+html {
+  color: hsl(0, 0%, 100%);
+}
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+}
+
+/* Main container styles */
+main {
+  padding: 20px 0px;
+  margin: auto;
+  background-color: hsl(0, 0%, 12%);
+  width: 327px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Image styles */
+img {
+  width: 89px;
+  border-radius: 50%;
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0px;
+}
+li {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+  padding: 13.5px;
+  width: 280px;
+  margin: 16px auto;
+}
+ul li:last-child {
+  margin-bottom: 14px;
+}
+ul li:first-child {
+  margin-top: 30px;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+/* Paragraph and text styles */
+#f-p {
+  margin-bottom: 36px;
+}
+h1 {
+  margin-top: 30px;
+}
+strong {
+  color: hsl(75, 94%, 57%);
+}
+@media screen and (min-width: 800px) {
+  main {
+    width: 385px;
+    padding: 40px 0px;
+  }
+  li {
+    width: 303px;
+    margin-bottom: 0;
+  }
+}
