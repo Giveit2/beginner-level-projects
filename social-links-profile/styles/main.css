@@ -37,6 +37,12 @@ li {
   width: 280px;
   margin: 16px auto;
 }
+li:hover {
+  a {
+    color: hsl(0, 0%, 20%);
+  }
+  background-color: hsl(75, 94%, 57%);
+}
 ul li:last-child {
   margin-bottom: 14px;
 }
