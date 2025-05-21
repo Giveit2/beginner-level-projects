@@ -65,8 +65,13 @@ main {
   width: 26px;
 }
 
+@media  (min-width:1000px) {
+  .star {
+    width: 36px;
+  }
+}
 .star-wrapper h1 {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 150%;
 }
