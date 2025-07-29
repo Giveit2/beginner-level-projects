@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("./../assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
+  --main-font: "Work Sans", sans-serif;
+}
+
+/* Global */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--purple-100);
+  font-family: var(--main-font);
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Layout */
+.background-pattern-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+}
+
+main {
+  width: 327px;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: 15px;
+}
+@media screen and (min-width: 1000px) {
+  main {
+    width: 500px;
+    padding: 40px;
+  }
+}
+
+/* Components */
+.star-wrapper {
+  display: flex;
+  gap: 27px;
+  height: 50px;
+  align-items: center;
+}
+
+.star {
+  width: 26px;
+}
+
+@media  (min-width:1000px) {
+  .star {
+    width: 36px;
+  }
+}
+.star-wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.tab {
+  border-bottom: 2px solid var(--purple-100);
+}
+.tab:last-child {
+  border: 0;
+}
+
+/* Accordion logic */
+input {
+  display: none;
+}
+
+.tab-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tab-label:hover {
+  color: plum;
+}
+
+.plus-svg {
+  margin-left: 35px;
+  margin-right: 4px;
+}
+.minus-svg {
+  display: none;
+}
+
+.tab-content {
+  max-height: 0;
+  transition: max-height 0.33s;
+  overflow: hidden;
+  color: var(--purple-600);
+}
+
+.tab input:checked ~ .tab-content {
+  max-height: 500px;
+}
+.tab input:checked ~ .tab-label .minus-svg {
+  display: inline;
+  margin-left: 35px;
+  margin-right: 4px;
+}
+.tab input:checked ~ .tab-label .plus-svg {
+  display: none;
+}

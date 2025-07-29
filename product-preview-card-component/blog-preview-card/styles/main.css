@@ -1,0 +1,129 @@
+/* 1. Font-face declarations */
+@font-face {
+  font-family: "Figtree";
+  src: url("./../assets/fonts/Figtree-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal italic;
+}
+
+/* 2. Global styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree", serif;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+/* 3. Structural elements */
+header {
+  margin: 0;
+}
+
+main {
+  width: 327px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 7%);
+  background-color: hsl(0, 0%, 100%);
+  text-align: left;
+  box-shadow: 8px 8px 0 0 #000;
+}
+@media (min-width: 1000px) {
+  main {
+    width: 384px;
+  }
+}
+
+/* 4. Components */
+.preview {
+  border-radius: 10px;
+}
+
+.l-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  margin-top: 24px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 800;
+}
+
+@media (min-width: 1000px) {
+  .l-wrapper {
+    font-size: 14px;
+    width: 82px;
+    height: 29px;
+  }
+}
+
+address {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  gap: 10px;
+  margin-top: 24px;
+  font-style: normal;
+}
+
+.avatar {
+  width: 32px;
+}
+
+/* 5. Typography */
+h1 {
+  margin: 12px 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+.date {
+  margin: 12px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+@media (min-width: 1000px) {
+  .date {
+    font-size: 14px;
+  }
+}
+
+.info {
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: hsl(0, 0%, 42%);
+}
+
+@media (min-width: 1000px) {
+  .info {
+    padding-right: 20px;
+    font-size: 16px;
+  }
+}
+
+address span {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 800;
+}

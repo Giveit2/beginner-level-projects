@@ -1,0 +1,198 @@
+/* 1. Font-face declarations */
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YoungSerif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 2. Global styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  /* display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center; */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: hsl(30, 54%, 90%);
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 2em;
+  display: block;
+}
+
+hr {
+  width: calc(100% - 4em);
+  border: none;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  height: 0;
+}
+
+/* 3. Typography styles */
+h1 {
+  font-family: "YoungSerif", serif;
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  margin-right: 1.2em;
+}
+
+#top-p {
+  margin-right: 2em;
+}
+
+li {
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  line-height: 1.5em;
+}
+
+/* 4. Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  height: 2em;
+  padding: 0;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+
+td {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  padding-left: 2em;
+}
+
+.td-no-border {
+  border: none;
+}
+
+/* 5. Container styles */
+main {
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#top-container {
+  text-align: left;
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+}
+
+#prep-container {
+  background-color: hsl(330, 100%, 98%);
+  margin: 0 2em;
+  padding: 1em 2em;
+  border-radius: 0.8em;
+}
+
+#ingr-container {
+  margin: 2em;
+}
+
+#instr-container {
+  margin: 2em;
+}
+
+#nutr-container {
+  margin: 2em 2em 0em 2em;
+  padding-bottom: 2em;
+}
+
+/* 6. List styles */
+#prep-container ul,
+#ingr-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+#prep-container li,
+#ingr-container li {
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  width: 5px;
+  height: 5px;
+  background: hsl(332, 51%, 32%);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 1.7em;
+}
+
+.bullet-2 {
+  width: 5px;
+  height: 5px;
+  background: hsl(14, 45%, 36%);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 1.7em;
+}
+
+/* 7. Marker styles */
+#instr-container ::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 500;
+}
+
+/* 8. Media queries */
+@media (min-width: 1312px) {
+  main {
+    width: 46em;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  img {
+    width: 41em;
+    border-radius: 1em;
+    margin: 40px;
+  }
+
+  #top-container {
+    text-align: left;
+  }
+  th {
+    text-align: left;
+    padding-left: 2em;
+  }
+
+  td {
+    padding-right: 1.2em;
+  }
+}
